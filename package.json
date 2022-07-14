@@ -1,0 +1,19 @@
+{
+  "name": "test-common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ecommworlds/common.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ecommworlds/common/issues"
+  },
+  "homepage": "https://github.com/Ecommworlds/common#readme"
+}
