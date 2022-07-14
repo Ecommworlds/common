@@ -13,9 +13,8 @@ express_1.default.response.sendHttpError = function (statusCode, message, error 
 express_1.default.response.sendValidationError = function (errors, message = "Validation Errors", statusCode = 422) {
     return this.contentType('application/json').status(statusCode).send({ message, code: statusCode, error: true, errorMessage: (0, http_errors_1.default)(statusCode).message, errors });
 };
-const app = (0, express_1.default)();
-app.enable("trust proxy");
-app.use((0, cors_1.default)());
-app.use(express_1.default.json());
-app.use(express_1.default.urlencoded({ extended: false }));
-module.exports = app;
+(0, express_1.default)().enable("trust proxy");
+(0, express_1.default)().use((0, cors_1.default)());
+(0, express_1.default)().use(express_1.default.json());
+(0, express_1.default)().use(express_1.default.urlencoded({ extended: false }));
+module.exports = (0, express_1.default)();
